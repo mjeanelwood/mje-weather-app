@@ -45,8 +45,19 @@ function displayTemperature(response) {
   );
 }
 
-let apiKey = "da8bebb3e3f08446cad530447d5543ae";
-let city = "Boise";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "da8bebb3e3f08446cad530447d5543ae";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Los Angeles");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

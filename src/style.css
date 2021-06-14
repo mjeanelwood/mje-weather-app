@@ -3,6 +3,7 @@ body {
 }
 h1 {
   margin-bottom: 0;
+  margin-top: 10px;
 }
 ul {
   margin: 0;
@@ -47,4 +48,7 @@ a {
   line-height: 1;
   font-size: 63px;
   font-weight: 300;
+}
+.description {
+  padding-left: 75px;
 }
