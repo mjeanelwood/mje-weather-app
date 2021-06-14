@@ -10,9 +10,12 @@ ul {
 }
 li {
   list-style: none;
-  text-transform: capitalize;
+
   margin: 0;
   padding: 0;
+}
+li:first-letter {
+  text-transform: capitalize;
 }
 img {
   width: 70px;
