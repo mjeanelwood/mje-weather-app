@@ -27,9 +27,14 @@ a {
   text-decoration: none;
   color: black;
 }
+hr {
+  max-width: 650px;
+  display: block;
+  margin: 0 auto;
+}
 
 .weather-app-wrap {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
 }
 .weather-app {
@@ -42,6 +47,7 @@ a {
   margin-bottom: 20px;
   line-height: 1.25;
 }
+
 .weather-temperature img {
   vertical-align: top;
   margin-right: 9px;
@@ -50,9 +56,19 @@ a {
 }
 .weather-temperature strong {
   line-height: 1;
-  font-size: 63px;
+  font-size: 60px;
   font-weight: 350;
 }
 .description {
   padding-left: 75px;
+}
+.forecast {
+  margin-top: 16px;
+  text-align: center;
+}
+.forecast-date {
+  font-size: 16px;
+}
+.forecast-temperature {
+  font-size: 13px;
 }
