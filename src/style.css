@@ -45,24 +45,21 @@ hr {
 }
 .overview {
   margin-bottom: 20px;
-  line-height: 1.25;
 }
 
 .weather-temperature img {
-  vertical-align: top;
-  margin-right: 9px;
   height: 65px;
   width: 65px;
 }
 .weather-temperature strong {
-  line-height: 1;
   font-size: 60px;
   font-weight: 350;
 }
 .description {
-  padding-left: 75px;
+  padding-left: 60px;
+  font-size: 13px;
 }
-.forecast {
+.weather-forecast {
   margin-top: 16px;
   text-align: center;
 }

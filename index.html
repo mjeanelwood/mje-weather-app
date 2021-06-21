@@ -40,7 +40,7 @@
             </div>
           </form>
           <div class="row" id="current-weather">
-            <div class="col-4">
+            <div class="col-5">
               <div class="overview" id="overview-wrapper">
                 <h1 id="city"></h1>
                 <ul>
@@ -51,17 +51,19 @@
             </div>
             <div class="col-4">
               <div class="clearfix weather-temperature">
-                <img src="" alt="" id="icon" class="float-left" />
-                <span class="float-left">
-                  <strong id="temperature"></strong>
+                <div class="weather-temperature">
+                  <img src="" alt="" id="icon" class="float-left" />
+                  <span class="float-left">
+                    <strong id="temperature"></strong
+                  ></span>
                   <span class="units">
                     <a href="#" id="celsius-link">C°</a>|
                     <a href="#" id="fahrenheit-link">F°</a>
                   </span>
-                </span>
+                </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
               <ul class="description">
                 <li>Humidity: <span id="humidity"></span> %</li>
                 <li>Wind: <span id="wind"></span> KmH</li>
@@ -69,28 +71,7 @@
             </div>
           </div>
           <hr />
-
-          <div class="forecast">
-            <div class="row">
-              <div class="col-2">
-                <div class="forecast-date">Sunday</div>
-                <img
-                  src="http://openweathermap.org/img/wn/50d@2x.png"
-                  alt=""
-                  id="icon"
-                  class="float-left"
-                  width="23"
-                />
-                <div class="forecast-temperature">
-                  <span class="forecast-temperature-max">
-                    <strong>18 °</strong></span
-                  >
-                  /
-                  <span class="forecast-temperature-min">12 °</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
         <small
           ><em>
