@@ -94,3 +94,7 @@ hr {
   border: 2px solid #767676;
   border-radius: 12px;
 }
+
+#open-source {
+  color: rgb(110, 136, 161);
+}
