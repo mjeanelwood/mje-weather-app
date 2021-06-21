@@ -45,7 +45,6 @@
                 <h1 id="city"></h1>
                 <ul>
                   <li id="date"></li>
-                  <li id="condition"></li>
                 </ul>
               </div>
             </div>
@@ -56,17 +55,15 @@
                   <span class="float-left">
                     <strong id="temperature"></strong
                   ></span>
-                  <span class="units">
-                    <a href="#" id="celsius-link">C°</a>|
-                    <a href="#" id="fahrenheit-link">F°</a>
-                  </span>
+                  <span class="units"> F° </span>
                 </div>
               </div>
             </div>
             <div class="col-3">
               <ul class="description">
                 <li>Humidity: <span id="humidity"></span> %</li>
-                <li>Wind: <span id="wind"></span> KmH</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+                <li id="condition"></li>
               </ul>
             </div>
           </div>
@@ -79,7 +76,7 @@
               href="https://github.com/mjeanelwood/mje-weather-app"
               target="_blank"
             >
-              Open-source coding</a
+              <span id="open-source">Open-source coding</span></a
             >
             by M J Elwood
           </em></small
